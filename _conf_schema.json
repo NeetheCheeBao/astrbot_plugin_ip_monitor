@@ -1,0 +1,48 @@
+{
+  "enable": {
+    "description": "启用 IP 监控",
+    "type": "bool",
+    "hint": "关闭后插件不会后台检测，但命令仍可用",
+    "default": false
+  },
+  "check_interval_seconds": {
+    "description": "检测周期（秒）",
+    "type": "int",
+    "hint": "两次公网 IP 检测之间的间隔，建议 60～3600。过短可能触发查询服务限流。",
+    "default": 1800,
+    "slider": {
+      "min": 30,
+      "max": 86400,
+      "step": 30
+    }
+  },
+  "notify_on_startup": {
+    "description": "启动时若检测到变化则通知",
+    "type": "bool",
+    "hint": "插件加载后第一次检测若与上次记录的 IP 不同，是否发送通知",
+    "default": true
+  },
+  "notify_qq_list": {
+    "description": "通知目标 QQ 号",
+    "type": "list",
+    "hint": "仅支持私聊。填写要接收通知的 QQ 号列表，一行一个或逗号分隔均可。不支持群聊。",
+    "default": []
+  },
+  "message_template": {
+    "description": "通知消息模板",
+    "type": "text",
+    "hint": "支持变量：{old_ip} 旧IP，{new_ip} 新IP，{time} 检测时间，{hostname} 主机名，{interval} 当前检测周期(秒)",
+    "default": "⚠️ 公网 IP 已变更\n旧 IP：{old_ip}\n新 IP：{new_ip}\n时间：{time}\n主机：{hostname}"
+  },
+  "request_timeout": {
+    "description": "单次查询超时（秒）",
+    "type": "int",
+    "hint": "每个 IP 查询服务的超时时间",
+    "default": 10,
+    "slider": {
+      "min": 3,
+      "max": 30,
+      "step": 1
+    }
+  }
+}

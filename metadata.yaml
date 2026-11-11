@@ -1,0 +1,17 @@
+name: astrbot_plugin_ip_monitor
+display_name: 本机IP变化监控
+short_desc: 检测本机IP变化并私聊通知
+desc: |
+  定期检测本机IP是否发生变化，一旦变化即向指定目标发送私聊通知
+  查询源：IP.SB、ipwho.is、ipapi.is
+  支持自定义检测周期与消息模板
+version: 1.0.0
+author: NeetheCheeBao
+author_url: https://github.com/NeetheCheeBao
+repo: https://github.com/NeetheCheeBao/astrbot_plugin_ip_monitor
+support_platforms:
+  - aiocqhttp
+astrbot_version: ">=4.9.2"
+category: 工具
+tags: 
+  - 网络监控
