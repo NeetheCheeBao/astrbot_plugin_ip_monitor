@@ -3,7 +3,7 @@
 <h1>astrbot_plugin_ip_monitor</h1>
 <h3>本机IP变化监控</h3>
 
-[![License](https://img.shields.io/badge/License-GPLv3-blue?style=flat-square)](LICENSE)
+[![License](https://img.shields.io/badge/License-AGPLv3-blue?style=flat-square)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.14+-blue?style=flat-square)](https://www.python.org/)
 [![AstrBot](https://img.shields.io/badge/Framework-AstrBot-ff6b6b?style=flat-square)](https://github.com/AstrBotDevs/AstrBot)
 
@@ -70,4 +70,4 @@ pip install -r requirements.txt
 
 ## ⚖️ 许可证
 
-本项目采用 GPLv3 许可证 - 详情请参阅 [LICENSE](LICENSE) 文件。
+本项目采用 GNU Affero General Public License v3.0 许可证 - 详情请参阅 [LICENSE](LICENSE) 文件。
